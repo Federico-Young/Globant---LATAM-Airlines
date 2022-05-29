@@ -11,6 +11,8 @@ from sklearn.preprocessing import OneHotEncoder
 from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 import traceback
+from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import recall_score
 
 
 def group_top_x_amount_of_categories(df, col, amount_of_categories):
